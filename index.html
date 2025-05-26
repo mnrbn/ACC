@@ -1,11 +1,143 @@
 <!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nando's Bar</title>
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Font Awesome para ícones -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
-   <h1>EXEMPLO DE SLA </h1> 
-</body>
-</html>
+  <header>
+    <h1>Nando's Bar🍻</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Início</a></li>
+        <li><a href="#cardapio">Cardápio</a></li>
+        <li><a href="#eventos">Eventos</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>O melhor bar da cidade te espera!</h2>
+    <p>Drinks exclusivos, música boa e aquela resenha top!</p>
+    <a href="#cardapio" class="btn">Veja o cardápio</a>
+  </section>
+
+  <section class="cardapio" id="cardapio">
+    <h2>Nosso Cardápio</h2>
+
+    <h3 class="categoria"><i class="fas fa-cocktail"></i> Drinks</h3>
+    <div class="bebidas">
+      <div class="bebida"><h4>Caipirinha</h4><p>R$ 15,00</p></div>
+      <div class="bebida"><h4>Gin Tônica</h4><p>R$ 22,00</p></div>
+    </div>
+
+    <div class="mais-bebidas" style="display: none;">
+      <div class="bebidas">
+        <div class="bebida"><h4>Margarita</h4><p>R$ 20,00</p></div>
+        <div class="bebida"><h4>Mojito</h4><p>R$ 18,00</p></div>
+        <div class="bebida"><h4>Sex on the Beach</h4><p>R$ 19,00</p></div>
+        <div class="bebida"><h4>Pina Colada</h4><p>R$ 20,00</p></div>
+      </div>
+    </div>
+
+    <div class="ver-mais-container">
+      <button id="btnVerMais" class="btn">Ver mais</button>
+    </div>
+
+    <h3 class="categoria"><i class="fas fa-glass-whiskey"></i> Destilados</h3>
+    <div class="bebidas">
+      <div class="bebida"><h4>Whisky</h4><p>R$ 25,00</p></div>
+      <div class="bebida"><h4>Tequila (dose)</h4><p>R$ 12,00</p></div>
+      <div class="bebida"><h4>Vodka com Energético</h4><p>R$ 23,00</p></div>
+    </div>
+
+    <h3 class="categoria"><i class="fas fa-beer"></i> Cervejas</h3>
+    <div class="bebidas">
+      <div class="bebida"><h4>Cerveja Long Neck</h4><p>R$ 10,00</p></div>
+      <div class="bebida"><h4>Chopp (300ml)</h4><p>R$ 8,00</p></div>
+    </div>
+
+    <h3 class="categoria"><i class="fas fa-wine-bottle"></i> Sem Álcool</h3>
+    <div class="bebidas">
+      <div class="bebida"><h4>Refrigerante</h4><p>R$ 6,00</p></div>
+    </div>
+  </section>
+
+  <!-- 🌟 NOVA SEÇÃO DE EVENTOS -->
+  <section class="eventos" id="eventos">
+    <h2>Agenda da Semana</h2>
+    <div class="agenda-container">
+      <div class="evento-card">
+        <h3>🎤 Sexta Acústica</h3>
+        <p>Shows ao vivo com voz e violão a partir das 20h.</p>
+      </div>
+      <div class="evento-card">
+        <h3>🍻 Sábado da Cerveja</h3>
+        <p>Promoção de chopp em dobro até às 22h.</p>
+      </div>
+      <div class="evento-card">
+        <h3>🎉 Quarta do Karaokê</h3>
+        <p>Traga seus amigos e solte a voz! Começa às 19h.</p>
+      </div>
+      <div class="evento-card">
+        <h3>🎲 Noite de Jogos (Domingo)</h3>
+        <p>Board games, petiscos e drinks promocionais!</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="contato" id="contato">
+    <h2>Fale com a gente 🍻</h2>
+    <p>Quer fazer uma reserva, tirar dúvidas ou mandar sugestões? Preencha o formulário abaixo:</p>
+  
+
+    <form class="formulario-contato" action="https://formsubmit.co/nandosbar00@gmail.com" method="POST">
+      <!-- Campos do formulário -->
+      <input type="text" name="name" placeholder="Seu nome" required>
+      <input type="email" name="email" placeholder="Seu e-mail" required>
+      <textarea name="message" placeholder="Escreva sua mensagem aqui..." required></textarea>
+      <button type="submit">Enviar</button>
+    
+      <!-- Campos ocultos recomendados -->
+      <input type="hidden" name="_subject" value="Nova mensagem do site Nando's Bar!">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_template" value="box">
+    </form>
+      
+     <!---- <div id="mensagem-sucesso" style="display: none; margin-top: 20px; color: #4caf50; font-weight: bold;">
+        ✅ Sua mensagem foi enviada com sucesso!
+      </div> -->
+      
+      
+  </section>
+  
+  <footer><footer>
+    <div class="redes-sociais">
+      <a href="https://www.instagram.com/nandosbar01" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://wa.me/ 5521968838420" target="_blank"><i class="fab fa-whatsapp"></i></a>
+    </div>
+    <p>&copy; 2025 Nando's Bar. Todos os direitos reservados.</p>
+  </footer>
+  
+
+  <script>
+    const btn = document.getElementById("btnVerMais");
+    const maisBebidas = document.querySelector(".mais-bebidas");
+
+    btn.addEventListener("click", () => {
+      if (maisBebidas.style.display === "none") {
+        maisBebidas.style.display = "block";
+        btn.textContent = "Ver menos";
+      } else {
+        maisBebidas.style.display = "none";
+        btn.textContent = "Ver mais";
+      }
+e    });
+  </script>
